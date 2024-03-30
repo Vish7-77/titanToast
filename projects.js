@@ -31,7 +31,7 @@ const data = [
     title: "En-decor",
     description:
       "our eye for meticulous details helps us to understand client needs, formulate seamless design strategies and fashion flawless",
-    link: "https://ak-edu.vercel.app",
+    link: "https://en-decor.com/",
     pic: "./assets/endecor.png",
   },
   {

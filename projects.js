@@ -141,7 +141,7 @@ data.forEach((item) => {
   const image = document.createElement("img");
   image.src = item.pic;
   image.alt = "Dev";
-
+  image.loading = "lazy"
   imageContainer.appendChild(image);
 
   const contentContainer = document.createElement("div");

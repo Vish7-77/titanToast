@@ -51,7 +51,7 @@ const data = [
   {
     title: "Eservice-Pro",
     description:
-      "Start your treatment journey Let’s address the core concerns in a confidential and private space",
+      "Looking for a field service management software? Look no further! Our pricing list is sure to have the right software for you.",
     link: "https://eservicepro.com/",
     pic: "./assets/eservice.png",
   },
@@ -125,6 +125,26 @@ const data = [
     link: "https://zir-gui.vercel.app",
     pic: "./assets/zir.png",
   },
+  {
+    title: "Auris Labs",
+    description:
+      "We are on a mission to revolutionize the industry with innovation and cutting-edge technology solutions.",
+    link: "https://auris-labs.com/",
+    pic: "./assets/auris.png",
+  },
+  {
+    title: "Ak-Elearning",
+    description: "An Ak Product for students, as E-learning platform",
+    link: "https://ak-edu-e-learning.onrender.com/",
+    pic: "./assets/ak-elearn.png",
+  },
+  {
+    title: "lil-Mail Service",
+    description:
+      "Email service for your website form, integrate in your HTML form and provide your mail, you will be notified if any one submit your website form",
+    link: "https://emailservice.smitgala.com/",
+    pic: "./assets/lilmail.png",
+  },
 ];
 
 const appContainer = document.getElementById("app-container");
@@ -141,7 +161,7 @@ data.forEach((item) => {
   const image = document.createElement("img");
   image.src = item.pic;
   image.alt = "Dev";
-  image.loading = "lazy"
+  image.loading = "lazy";
   imageContainer.appendChild(image);
 
   const contentContainer = document.createElement("div");

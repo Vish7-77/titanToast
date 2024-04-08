@@ -51,7 +51,7 @@ const data = [
   {
     title: "Eservice-Pro",
     description:
-      "Start your treatment journey Let’s address the core concerns in a confidential and private space",
+      "Looking for a field service management software? Look no further! Our pricing list is sure to have the right software for you.",
     link: "https://eservicepro.com/",
     pic: "./assets/eservice.png",
   },

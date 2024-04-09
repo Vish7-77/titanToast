@@ -145,6 +145,13 @@ const data = [
     link: "https://emailservice.smitgala.com/",
     pic: "./assets/lilmail.png",
   },
+  {
+    title: "Veena cabs",
+    description:
+      "We’ve fine experience in providing intercity drop taxi services. We are expert in the field of tours & travels in Bangalore, and commited to provide you the best service.",
+    link: "https://veenacabs.in/",
+    pic: "./assets/veenacabs.png",
+  },
 ];
 
 const appContainer = document.getElementById("app-container");

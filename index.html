@@ -43,6 +43,44 @@
   <link rel="preload" href="./assets/workspace.png" as="image">
 </head>
 
+<style>
+    .main-title {
+    color: #f5f5dc;
+    font-size: clamp(1.875rem, 5vw, 5rem);
+    font-weight: bold;
+    text-align: center;
+    max-width: 70vw;
+    margin: 0;
+    animation: fadeIn 1s ease-out;
+  }
+
+  .subtitle {
+    color: #888;
+    text-align: center;
+    max-width: 70vw;
+    margin-top: 1.25rem;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-out 0.5s backwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .main-title, .subtitle {
+      max-width: 96vw;
+    }
+  }
+</style>
+
 <body id="bgg" class="">
   <div class="flex sm:p-5 p-0 justify-center items-center py-10">
     <div class="flex sm:w-4/5 w-[90%] justify-between items-center">
@@ -63,13 +101,12 @@
   </div>
 
   <div class="flex w-full sm:py-10 py-2 flex-col h-[44rem] sm:h-screen justify-center gap-5 items-center">
-    <span class="text-[#f5f5dc] font-bold sm:text-7xl text-3xl w-[96vw] sm:w-[70vw] text-center glow-text">Fusing Ideas,
-      Crafting Excellence.</span>
-    <span class="text-center mx-auto text-gray-400 mt-5 sm:w-[70vw] w-[99vw]">Forging Excellence in Every Byte. A
-      commitment to precision and
-      excellence,delivering tailored solutions, where expertise meets
-      innovation, and possibilities unfold.precision, professionalism, and
-      progress....</span>
+    <h1 class="main-title">Fusing Ideas, Crafting Excellence.</h1>
+    <p class="subtitle">
+      Forging Excellence in Every Byte. A commitment to precision and excellence, 
+      delivering tailored solutions, where expertise meets innovation, and 
+      possibilities unfold.
+    </p>
 
     <a href="#projects" class="button-57 mt-10" role="button">
       <span class="text">let's Ignite</span><span>Explore</span>
@@ -92,7 +129,7 @@
 
   <section class="w-full flex justify-center items-center p-10">
     <div
-      class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+      class="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden  bg-white bg-clip-border text-center text-gray-700">
       <div
         class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
         <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>

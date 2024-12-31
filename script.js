@@ -198,6 +198,38 @@ const techdata = [
     image:
       "https://cdn.iconscout.com/icon/free/png-256/free-apache-kafka-3628659-3030006.png",
   },
+  
+  {
+    description: "RabbitMQ",
+    name: "Message Queue",
+    image:
+      "https://download.logo.wine/logo/RabbitMQ/RabbitMQ-Logo.wine.png", 
+  },
+  {
+    description: "Zookeeper",
+    name: "Distributed Coordination",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/77/Apache_ZooKeeper_logo.svg", 
+  },
+  {
+    description: "Jest",
+    name: "JavaScript Testing",
+    image:
+      "https://jestjs.io/img/opengraph.png", 
+  },
+  {
+    description: "SonarQube",
+    name: "Code Quality and Security",
+    image:
+      "https://www.svgrepo.com/show/354365/sonarqube.svg", 
+  },
+  {
+    description: "Elasticsearch",
+    name: "Search Engine",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-YIOrNQNat2aRtdT_8jWQWpVH5BM7kLcc4A&s", 
+  },
+  
   {
     description: "Redis",
     name: "In-memory Data Store",
@@ -245,7 +277,7 @@ const container = document.getElementById("tech-container");
 techdata.forEach((item) => {
   const techCard = document.createElement("div");
   techCard.className =
-    "flex-shrink-0 m-6 h-[14rem] relative overflow-hidden bg-white rounded-lg max-w-xs shadow-lg";
+    "flex-shrink-0 m-6 h-[14rem] relative overflow-hidden bg-white  max-w-xs shadow-lg";
 
   techCard.innerHTML = `
       <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none"

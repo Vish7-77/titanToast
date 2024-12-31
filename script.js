@@ -1,45 +1,24 @@
 const data = [
   {
-    title: "Synerge",
+    title: "Staples E-Commerce",
     description:
-      "curious, hardworking, sociable entrepreneurs. People who want to focus on creating great, innovative products",
-    link: "https://www.synergeworkspace.com/",
-    pic: "./assets/synergewebsite.png",
+      "Developed as part of the Staples E-Commerce project, leveraging the NERN stack (Node.js, Express, React, Next.js) to build robust features for enhanced user experience.",
+    link: "https://www.staples.com/",
+    pic: "https://i.ytimg.com/vi/DJfxsw49HuI/maxresdefault.jpg", 
   },
   {
-    title: " AspironKhuze",
+    title: "SuccessWare-21",
     description:
-      "  Aspiron Khuze Technologies Pvt Ltd: Pioneering Innovation in Tech Solutions.",
-    link: "https://aspironkhuze.com/",
-    pic: "./assets/aspironkhuze.png",
+    "A powerful platform designed to streamline business processes and improve operational efficiency for service-based industries.",
+  link: "https://www.successware.com/",
+    pic: "https://media.licdn.com/dms/image/v2/C4D1BAQEddy__Qrlrng/company-background_10000/company-background_10000/0/1592317232304/successware_21_a_division_of_clockwork_home_services_cover?e=2147483647&v=beta&t=95Kggq_dKyJC0px4BYfP0C68G47Jm-I0q6U_losd790", 
   },
   {
-    title: "    Workspace",
+    title: "Eservice-Pro",
     description:
-      "Admin dashboard to maintain all the bookings for synerge  worskpace.login to varifiaction of new user.",
-    link: "https://community.synergeworkspace.com/",
-    pic: "./assets/workspace.png",
-  },
-  {
-    title: "Aspirings",
-    description:
-      "  An Ak product for educational ERP. to maintain all the academic records and maintain them digitally.",
-    link: "https://ak-edu.vercel.app",
-    pic: "./assets/aspirings.png",
-  },
-  {
-    title: "En-decor",
-    description:
-      "our eye for meticulous details helps us to understand client needs, formulate seamless design strategies and fashion flawless",
-    link: "https://ak-edu.vercel.app",
-    pic: "./assets/endecor.png",
-  },
-  {
-    title: "AlfaAviation",
-    description:
-      "A premier institution at the forefront of aviation education in India. Rooted in a rich tradition of excellence and innovation, ",
-    link: "https://alfaaviationacademy.in/",
-    pic: "./assets/alfa.png",
+      "Looking for a field service management software? Look no further! Our pricing list is sure to have the right software for you.",
+    link: "https://qa.eservicepro.com/",
+    pic: "./assets/eservice.png",
   },
   {
     title: "Qurex",
@@ -49,36 +28,42 @@ const data = [
     pic: "./assets/qurex.png",
   },
   {
-    title: "Eservice-Pro",
-    description:
-      "Looking for a field service management software? Look no further! Our pricing list is sure to have the right software for you.",
-    link: "https://eservicepro.com/",
-    pic: "./assets/eservice.png",
-  },
-  {
     title: "S9 trucks",
     description:
       "Fast & Secure booking Hire a truck instantly. Book online or just call us. Truck will be at your pickup point",
     link: "https://s9trucks.com/",
     pic: "./assets/s9.png",
   },
+
+  {
+    title: "Synerge",
+    description:
+      "curious, hardworking, sociable entrepreneurs. People who want to focus on creating great, innovative products",
+    link: "https://www.synergeworkspace.com/",
+    pic: "./assets/synergewebsite.png",
+  },
+ 
 ];
+
+
 
 const appContainer = document.getElementById("app-container");
 
 data.forEach((item) => {
   const card = document.createElement("div");
   card.className =
-    "relative flex  sm:h-[34rem] h-fit max-w-[24rem] m-5 flex-col justify-between overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md";
+    "relative flex  min-h-[23rem]   max-w-[24rem] m-5 flex-col justify-between overflow-hidden  bg-white bg-clip-border text-gray-700 shadow-md";
 
   const imageContainer = document.createElement("div");
   imageContainer.className =
-    "relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border";
+    "relative m-0 overflow-hidden text-gray-700 border-b-2 border-black h-[14rem]  bg-transparent  rounded-none shadow-none bg-clip-border";
 
   const image = document.createElement("img");
   image.src = item.pic;
   image.alt = "Dev";
-
+  image.loading = "lazy";
+  image.style.height="100%"
+  image.style.objectFit="cover"
   imageContainer.appendChild(image);
 
   const contentContainer = document.createElement("div");
@@ -91,21 +76,23 @@ data.forEach((item) => {
 
   const description = document.createElement("p");
   description.className =
-    "block mt-3 font-sans sm:flex hidden text-xl antialiased font-normal leading-relaxed text-gray-700";
+    "block mt-3 font-sans sm:flex hidden text-sm antialiased font-normal leading-relaxed text-gray-700";
   description.textContent = item.description;
 
   contentContainer.appendChild(title);
   contentContainer.appendChild(description);
 
   const buttonContainer = document.createElement("div");
-  buttonContainer.className = "p-6 pt-3";
+  buttonContainer.className = "pl-6 pb-6";
 
   const reserveButton = document.createElement("a");
   reserveButton.className =
-    "block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none";
+    " border-2 border-dashed border-black bg-white px-4 py-2 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] text-sm hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none";
   reserveButton.href = item?.link;
-  reserveButton.textContent = "Live visit";
   reserveButton.target = "_blank";
+  reserveButton.style.fontSize ='11px'
+  reserveButton.textContent = "Live visit";
+
   buttonContainer.appendChild(reserveButton);
 
   card.appendChild(imageContainer);
@@ -129,7 +116,7 @@ const techdata = [
   },
   {
     description: "Next-Js",
-    name: "fledge Framework",
+    name: "Fledge Framework",
     image:
       "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png",
   },
@@ -140,10 +127,16 @@ const techdata = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png",
   },
   {
-    description: "Mongo",
+    description: "MongoDB",
     name: "Database",
     image:
       "https://media.licdn.com/dms/image/C5112AQFQqaMd1JebMg/article-cover_image-shrink_600_2000/0/1582347809028?e=2147483647&v=beta&t=XPKc9BU0gjYR08TMHidLkpHyV5ZMO2fD244-FZz97Rs",
+  },
+  {
+    description: "Cassandra",
+    name: "NoSQL Database",
+    image:
+    "https://cassandra.apache.org/assets/img/logo-white-r.png",
   },
   {
     description: "Docker",
@@ -152,24 +145,23 @@ const techdata = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YMYzI15AWBTmGnAKuiQikYypM8f4n10vh3_mphh4RQ&s",
   },
   {
-    description: "Native",
+    description: "React Native",
     name: "Mobile Application",
     image:
       "https://miro.medium.com/v2/resize:fit:1000/1*GkR93AAlILkmE_3QQf88Ug.png",
   },
   {
     description: "AWS",
-    name: "Webservice ",
+    name: "Webservice",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
   },
   {
     description: "Linux",
-    name: "Command line interface ",
+    name: "Command line interface",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
   },
-
   {
     description: "Firebase",
     name: "Store or authentication",
@@ -182,7 +174,6 @@ const techdata = [
     image:
       "https://getlogo.net/wp-content/uploads/2020/11/supabase-logo-vector.png",
   },
-
   {
     description: "VCS",
     name: "Github/Bitbucket/labs",
@@ -191,17 +182,63 @@ const techdata = [
   },
   {
     description: "Cloudflare",
-    name: "Dns And CDN ",
+    name: "DNS And CDN",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cloudflare_Logo.svg/1200px-Cloudflare_Logo.svg.png",
   },
   {
     description: "RazorPay / Stripe",
-    name: "Payment GatesWays ",
+    name: "Payment Gateways",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorhm2nLg05SPnNRybg7UotZtRBf8OWgFwsQ&usqp=CAU",
   },
+  {
+    description: "Kafka",
+    name: "Distributed Event Streaming",
+    image:
+      "https://cdn.iconscout.com/icon/free/png-256/free-apache-kafka-3628659-3030006.png",
+  },
+  {
+    description: "Redis",
+    name: "In-memory Data Store",
+    image:
+      "https://cdn.worldvectorlogo.com/logos/redis.svg",
+  },
+  {
+    description: "Nginx",
+    name: "Web Server/Reverse Proxy",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
+  },
+  {
+    description: "Splunk",
+    name: "Log Management & Analytics",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSrZ3hhDnaFrTOYxczCCIKBH1Ud5AP_V-Bg&s",
+  },
+  {
+    description: "Kibana",
+    name: "Data Visualization for Elasticsearch",
+    image:
+      "https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg",
+  },
+  {
+    description: "Prometheus",
+    name: "Monitoring System",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
+  },
+  {
+    description: "Grafana",
+    name: "Analytics & Monitoring",
+    image:
+      "https://cdn.worldvectorlogo.com/logos/grafana.svg",
+  },
 ];
+
+
+
+
 
 const container = document.getElementById("tech-container");
 

@@ -93,13 +93,6 @@ const data = [
     pic: "./assets/rabkerweb.png",
   },
   {
-    title: "Ranker Admin",
-    description:
-      "at HOMEVESTA, understand the special needs of NRIs for property management. Therefore, we have designed our services according to the distinct requirements of NRIs.",
-    link: "https://dev.rankerguide.in/",
-    pic: "./assets/rabkeradmin.png",
-  },
-  {
     title: "Ak-Ems",
     description:
       "An Ems system for internal use of Aspironkhuze organization, to maintain all employee records",

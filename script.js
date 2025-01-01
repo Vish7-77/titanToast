@@ -196,7 +196,7 @@ const techdata = [
     description: "Kafka",
     name: "Distributed Event Streaming",
     image:
-      "https://cdn.iconscout.com/icon/free/png-256/free-apache-kafka-3628659-3030006.png",
+      "https://miro.medium.com/v2/resize:fit:1400/1*5V1PnKn68SvmEpXYI-3CPw.png",
   },
   
   {

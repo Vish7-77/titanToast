@@ -64,11 +64,32 @@ const data = [
     pic: "./assets/aspirings.png",
   },
   {
+    title: "Pro-consulting partners",
+    description:
+      "When we all decided to start PCP, we realised we shared the same beliefs, which made us stronger together.",
+    link: "https://proconsultingpartners.com",
+    pic: "./assets/pcp.png",
+  },
+  {
     title: "En-decor",
     description:
       "our eye for meticulous details helps us to understand client needs, formulate seamless design strategies and fashion flawless",
     link: "https://en-decor.com/",
     pic: "./assets/endecor.png",
+  },
+  {
+    title: "Concept Furnitures",
+    description:
+      "The company aims to transform spaces into functional, aesthetically pleasing environments while catering to the unique needs and preferences of its clients",
+    link: "https://conceptfurniture.in",
+    pic: "./assets/conf.png",
+  },
+  {
+    title: "HUqqa Social",
+    description:
+      "Make your event shine with Huqqa Social's full service catering. From delicious dishes to flawless service",
+    link: "https://huqqasocial.co/",
+    pic: "./assets/huqqa.png",
   },
   {
     title: "AlfaAviation",
@@ -113,6 +134,12 @@ const data = [
     description: "An Ak Product for students, as E-learning platform",
     link: "https://ak-edu-e-learning.onrender.com/",
     pic: "./assets/ak-elearn.png",
+  },
+  {
+    title: "Smit gala",
+    description: "As a holistic marketer, my focus is on creating an integrated marketing strategy",
+    link: "https://smit-gala.pages.dev/",
+    pic: "./assets/smit.png",
   },
 ];
 

@@ -115,6 +115,12 @@ const techdata = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
   },
   {
+    description: "Python",
+    name: "Scripting",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+  },  
+  {
     description: "Next-Js",
     name: "Fledge Framework",
     image:
@@ -144,6 +150,12 @@ const techdata = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YMYzI15AWBTmGnAKuiQikYypM8f4n10vh3_mphh4RQ&s",
   },
+  {
+    description: "Kubernetes",
+    name: "ContainerOrchestration",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+  },  
   {
     description: "React Native",
     name: "Mobile Application",
